@@ -1,0 +1,9 @@
+body {
+            background-image: 
+            linear-gradient(to bottom, #69F6FF, #95D7CD, #BFD1B7);
+            height: 100vh;
+        }
+        h2 {
+            background-image: 
+            linear-gradient(to left, #69F6FF, #95D7CD, #BFD1B7);
+        }

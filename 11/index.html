@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias em HTML</title>
+</head>
+<body>
+        <h1>Imagens dinâmicas</h1>
+        <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente ou diminua o tamanho do seu navegador</p>
+
+        <picture>
+            <source media="(max-width: 750px)" srcset="imagens/pequena.png" sizes="imagens/png">
+            <source media="(max-width: 1050px )" srcset="imagens/media.png" sizes="imagens/png">
+            <img src="imagens/grande.png" alt="Imagem Flexivel">
+        </picture>
+
+        <h1>Reproduzindo Áudio</h1>
+        <h2>Vamos aprender a reproduzir áudios em HTML5</h2>
+        <p>Primeiro escute essa obra do Sombr</p>
+
+        <audio preload="metadata" autoplay controls>
+    <source src="sons/sombr.mp3" type="audio/mpeg">
+    <source src="sons/sombr.ogg" type="audio/ogg">
+    <source src="sons/sombr.wav" type="audio/wav"> 
+    <p>Infelizmente seu navegador não suporta a reprodução deste áudio.</p>
+    <p>Clique abaixo para baixar o áudio:</p>
+    <a href="sons/sombr.mp3">Sombr</a>
+        </audio>
+
+    <p>Agora escute a obra da Tate</p>
+
+        <audio preload="metadata" controls>
+    <source src="sons/tate.mp3" type="audio/mpeg">
+    <source src="sons/tate.ogg" type="audio/ogg">
+    <source src="sons/tate.wav" type="audio/wav"> 
+    <p>Infelizmente seu navegador não suporta a reprodução deste áudio.</p>
+    <p>Clique abaixo para baixar o áudio:</p>
+    <a href="sons/tate.mp3">Tate</a>
+        </audio>
+</body>
+</html>

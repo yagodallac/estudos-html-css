@@ -1,0 +1,29 @@
+@charset "UTF-8";
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif, sans-serif;
+    text-align: center;
+}
+
+div {
+    width: 100px;
+    height: auto;
+    color: #3498db;
+    margin: auto;
+}
+
+div:hover {
+    color: #205274;
+}
+
+div > p {
+    display: none;
+}
+
+div:hover > p {
+    display: block;
+    background-color: #3498db;
+    color: black;
+    width: 150px;
+    height: auto;
+}
