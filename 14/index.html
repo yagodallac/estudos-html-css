@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 500px;
+        }
+
+        th {
+            background-color: #adadad98;
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+        }
+
+        .num {
+            text-align: right;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Uso de tabelas grandes</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Cidade</th>
+                    <th>População</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>Balneário Camboriú</td>
+                    <td class="num">151.674</td>
+                </tr>           
+                <tr>
+                    <td>Florianópolis</td>
+                    <td class="num">508.826</td>
+                </tr>
+                <tr>
+                    <td>Joinville</td>
+                    <td class="num">597.658</td>
+                </tr>
+            </tbody>
+
+            <tfoot>
+                <tr class="foot">
+                    <th>Total</th>
+                        <td class="num"><strong>1.258.158</strong></td>
+            </tfoot>
+        </table>
+</body>
+</html>
