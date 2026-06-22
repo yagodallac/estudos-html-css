@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+
+        th, td {
+            border: 1px solid #000000;
+            padding: 10px;
+            text-align: center;
+        }
+
+        tr:nth-child(even) {
+            background-color: #dbdbdb;
+        }
+
+        div#container {
+            overflow-x: auto;
+            width: 70%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telas pequena</h1>
+    <p>Em telas pequenas, as tabelas podem ser difíceis de ler. Para melhorar a legibilidade, podemos usar CSS para tornar as tabelas responsivas. Isso pode ser feito usando a propriedade <code>display: block;</code> para transformar a tabela em um bloco e permitir que ela role horizontalmente.</p>
+
+    <div id="container">
+        <table>
+            <caption>
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Janeiro</th>
+                        <th>Fevereiro</th>
+                        <th>Março</th>
+                        <th>Abril</th>
+                        <th>Maio</th>
+                        <th>Junho</th>
+                        <th>Julho</th>
+                        <th>Agosto</th>
+                        <th>Setembro</th>
+                        <th>Outubro</th>
+                        <th>Novembro</th>
+                        <th>Dezembro</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                       <th>Produto 1</th>
+                       <td>01</td>
+                       <td>02</td>
+                       <td>03</td>
+                       <td>04</td>
+                       <td>05</td>
+                       <td>06</td>
+                       <td>07</td>
+                       <td>08</td>
+                       <td>09</td>
+                       <td>10</td>
+                       <td>11</td>
+                       <td>12</td>
+                    </tr>
+                    <tr>
+                       <th>Produto 2</th>
+                       <td>01</td>
+                       <td>02</td>
+                       <td>03</td>
+                       <td>04</td>
+                       <td>05</td>
+                       <td>06</td>
+                       <td>07</td>
+                       <td>08</td>
+                       <td>09</td>
+                       <td>10</td>
+                       <td>11</td>
+                       <td>12</td>
+                    </tr>
+                    <tr>
+                       <th>Produto 3</th>
+                       <td>01</td>
+                       <td>02</td>
+                       <td>03</td>
+                       <td>04</td>
+                       <td>05</td>
+                       <td>06</td>
+                       <td>07</td>
+                       <td>08</td>
+                       <td>09</td>
+                       <td>10</td>
+                       <td>11</td>
+                       <td>12</td>
+                    </tr>
+                    <tr>
+                       <th>Produto 4</th>
+                       <td>01</td>
+                       <td>02</td>
+                       <td>03</td>
+                       <td>04</td>
+                       <td>05</td>
+                       <td>06</td>
+                       <td>07</td>
+                       <td>08</td>
+                       <td>09</td>
+                       <td>10</td>
+                       <td>11</td>
+                       <td>12</td>
+                    </tr>
+                    <tr>
+                       <th>Produto 5</th>
+                       <td>01</td>
+                       <td>02</td>
+                       <td>03</td>
+                       <td>04</td>
+                       <td>05</td>
+                       <td>06</td>
+                       <td>07</td>
+                       <td>08</td>
+                       <td>09</td>
+                       <td>10</td>
+                       <td>11</td>
+                       <td>12</td>
+                    </tr>
+                </tbody>
+            </caption>
+        </table>
+    </div>
+</body>
+</html>
