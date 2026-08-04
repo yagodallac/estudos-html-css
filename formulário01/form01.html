@@ -7,16 +7,34 @@
 </head>
 <body>
     <h1>Meu primeiro formulário</h1>
-
-    <form action="cadastro.php" method="post" autocomplete="off">
-        <p> <label for="nome">Nome:</label>
-            <input type="text" name="nome" id="nome">       
-        </p>
-
-        <p> <label for="sobrenome">Sobrenome:</label>
-            <input type="text" name="sobrenome" id="sobrenome">
-        </p>
-        <p><input type="submit" value="Cadastrar"></p>
+    <form action="cadastro.php" method="post" autocomplete="on">
+        <fieldset>
+            <legend>Cadastro</legend>
+            <p>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" required minlength="5" maxlength="50" size="15" placeholder="nome do usuário" autocomplete="username">
+            </p>
+            <p>
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha" id="senha" required minlength="5" maxlength="50" size="15" placeholder="senha do usuário" autocomplete="current-password">
+            </p>
+            <p>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" required minlength="5" maxlength="50" size="15" placeholder="e-mail do usuário" autocomplete="email">
+            </p>
+            <p>
+                <label for="data">Período Letivo:</label>
+                <input type="date" name="data" id="data" required>
+            </p>
+            <p>
+                <label for="media">Média:</label>
+                <input type="number" name="media" id="media" required minlength="5" maxlength="50" size="15" placeholder="média do usuário" min="0" max="10" step="0.1">
+            </p>
+            <p>
+                <input type="submit" value="Cadastrar">
+                <input type="reset" value="Limpar">
+            </p>
+        </fieldset>
     </form>
 </body>
 </html>
