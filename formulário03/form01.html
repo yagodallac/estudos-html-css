@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exemplo de formulário</title>
+</head>
+<body>
+    <h1>Formulário com soma</h1>
+    <form action="cadastro.php" method="post">
+
+        <label for="num">Numero 1:</label>
+        <input type="number" name="num" id="num" required
+        oninput="resultado.innerHTML = Number(num.value) + Number(num2.value)"> <br>
+
+        <label for="num2">Numero 2:</label>
+        <input type="number" name="num2" id="num2" required
+        oninput="resultado.innerHTML = Number(num.value) + Number(num2.value)"> <br>
+
+        <label for="resultado">Resultado:</label>
+        <output name="resultado" id="resultado">0</output>
+
+        <p>
+                <input type="submit" value="Enviar">
+                <input type="reset" value="Limpar">
+            </p>
+    </form>
+</body>
+</html>
