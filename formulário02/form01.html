@@ -8,7 +8,7 @@
 <body>
     <h1>Exemplo de formulário</h1>
 
-    <form action="cadastro.php">
+    <form action="cadastro.php" method="post">
         <fieldset>
             <legend>Esportes</legend>
                 <p>
@@ -30,6 +30,21 @@
                 <input type="radio" name="sexo" id="fem" value="feminino">
                 <label for="fem">Feminino</label> <br>
 
+            </p>
+        </fieldset>
+        <fieldset>
+            <legend>Foto/cor favorita</legend>
+            <p>
+                <label for="foto">Foto:</label>
+                <input type="file" name="foto" id="foto">
+            </p>
+            <p>
+                <label for="cor">Cor:</label>
+                <input type="color" name="cor" id="cor">
+            </p>
+            <p>
+                <label for="nivel">Nível de Preferência:</label>
+                <input type="range" name="nivel" id="nivel" min="0" max="100">
             </p>
         </fieldset>
             <p>
